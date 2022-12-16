@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(15, 15, 15);
+  color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+}
+
+#gate {
+  margin-left: 10px;
+  border-radius: 12px;
+  background-color: whitesmoke;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#gate:hover {
+  background-color: #ddd;
+}
+
+#gate button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 12px;
+}
+#input1 {
+  margin-left: 10px;
+  border-radius: 12px;
+  background-color: whitesmoke;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#input2 {
+  margin-left: 10px;
+  border-radius: 12px;
+  background-color: whitesmoke;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#output {
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 12px;
+  background-color: whitesmoke;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  height: 20px;
+  color: black;
+}
+
+#submit {
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 12px;
+  background-color: whitesmoke;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+#mode {
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 12px;
+  background-color: whitesmoke;
+  border: 1px solid #ccc;
+  padding: 10px;
+}

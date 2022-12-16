@@ -1,18 +1,36 @@
+#include <stdlib.h>
 #include <stdio.h>
-
-int main() {
-    int myNum1;
-    int myNum2;
-    printf("Enter two numbers: \n");
-    scanf("%d %d", &myNum1, &myNum2);
-    int myNumResult = myNum1 + myNum2;
-    if (myNumResult > 0) {
-        printf("This number is positive\n");
-    } else if (myNumResult < 0) {
-        printf("This number is negative\n");
+#include <string.h>
+#include <windows.h>
+int main(int argc, char *argv[])
+{
+    int a, b, c;
+    printf("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n");
+    printf("Enter your choice: ");
+    scanf("%d", &c);
+    printf("Enter first number: ");
+    scanf("%d", &a);
+    printf("Enter second number: ");
+    scanf("%d", &b);
+    switch (c)
+    {
+    case 1:
+        printf("Sum = %d", a + b);
+        break;
+    case 2:
+        printf("Difference = %d", a - b);
+        break;
+    case 3:
+        printf("Product = %d", a * b);
+        break;
+    case 4:
+        printf("Quotient = %d", a / b);
+        break;
+    default:
+        printf("Invalid choice");
     }
-    printf("%d + %d = %d ", myNum1, myNum2, myNumResult);
-    printf("\nThe memory address is:\n");
-    printf ("%p", &myNumResult);
+    printf("\n");
+    Sleep(2000);
+    system("cls");
     return 0;
 }

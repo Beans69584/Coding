@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Logic Gate Simulator</title>
+    <script src="logicgates.js"></script>
+    <link rel="stylesheet" href="logicgates.css" />
+  </head>
+  <body>
+    <h1>Logic Gate Simulator</h1>
+    <center>
+      <select id="gate">
+        <option value="AND">AND</option>
+        <option value="OR">OR</option>
+        <option value="XOR">XOR</option>
+        <option value="NOT">NOT</option>
+        <option value="NAND">NAND</option>
+        <option value="NOR">NOR</option>
+        <option value="XNOR">XNOR</option>
+      </select>
+      <input type="text" id="input1" placeholder="Input 1" />
+      <input type="text" id="input2" placeholder="Input 2" />
+      <button id="submit" onclick="submit()">Submit</button>
+      <div id="output"></div>
+      <br />
+      <button id="mode" onclick="mode()">DNA/RNA</button>
+    </center>
+  </body>
+</html>
