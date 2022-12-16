@@ -25,7 +25,7 @@ function submit() {
       output.innerHTML = "Output: 0";
     }
   } else if (gate === "NOT") {
-    if (input1 === "1") {
+    if (input1 === "1" || input2 === "1") {
       output.innerHTML = "Output: 0";
     } else {
       output.innerHTML = "Output: 1";
@@ -223,7 +223,8 @@ function submit() {
 }
 
 function mode() {
-  // add options to the dropdown menu
+  document.getElementById("DNA").style.display = "block";
+  document.getElementById("RNA").style.display = "block";
   var gate = document.getElementById("gate");
   var option = document.createElement("option");
   option.text = "DNA AND";
@@ -271,13 +272,14 @@ function mode() {
   document.getElementById("mode").setAttribute("onclick", "modeReset()");
 }
 function modeReset() {
-  // remove options from the dropdown menu
+  document.getElementById("DNA").style.display = "none";
+  document.getElementById("RNA").style.display = "none";
   var gate = document.getElementById("gate");
   // remove specific options from the dropdown menu
   // remove last 14 options
   for (var i = 8; i < 22; i++) {
     gate.remove(gate.length - 1);
   }
-  // change the button's onclick function to mode()
+  document.getElementById("output").innerHTML = "";
   document.getElementById("mode").setAttribute("onclick", "mode()");
 }
