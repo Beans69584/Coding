@@ -6,7 +6,7 @@ def decryptPassword()
     key = OpenSSL::PKey::RSA.new(File.read("key.pem"))
     # decrypt the password
     password = key.private_decrypt(Base64.decode64(file_contents))
-    puts "The password is #{password}"
+    puts "#{password}"
     # return password to the python script 
     return password
 end
