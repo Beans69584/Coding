@@ -25,13 +25,18 @@ global exit_button
 global font_choice
 global win2
 font_choice = "Arial"
+# check if being run in the correct directory
+if os.path.isfile("tkinter-rsa.pyw") == False:
+    messagebox.showerror("Error", "Please run this program in the correct directory")
+    exit()
 if os.system("ruby -v") != 0:
     messagebox.showerror("Error", "Ruby is not installed. Please install Ruby to use this program.")
     exit()
-if os.path.isfile("rsa-password.rb") == False:
+cwd = os.getcwd()
+if os.path.isfile(cwd + "\\rsa-password.rb") == False:
     messagebox.showerror("Error", "rsa-password.rb is not installed. Please install rsa-password.rb to use this program.")
     exit()
-if os.path.isfile("rsa-decrypt.rb") == False:
+if os.path.isfile(cwd + "\\rsa-decrypt.rb") == False:
     messagebox.showerror("Error", "rsa-decrypt.rb is not installed. Please install rsa-decrypt.rb to use this program.")
     exit()
 show_progress_bar = "True"
