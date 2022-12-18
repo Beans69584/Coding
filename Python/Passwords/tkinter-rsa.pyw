@@ -14,8 +14,6 @@ from tkinter import Menu
 from tkinter import Spinbox
 show_progress_bar = "True"
 win = Tk()
-# icon
-win.iconbitmap("icon.ico")
 win.title("RSA Encryption and Decryption")
 win.resizable(False, False)
 monty = ttk.LabelFrame(win, text=' RSA Encryption and Decryption ', name="labelFrame")
