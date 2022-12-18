@@ -25,9 +25,8 @@ global exit_button
 global font_choice
 global win2
 font_choice = "Arial"
-# check if being run in the correct directory
 if os.path.isfile("tkinter-rsa.pyw") == False:
-    messagebox.showerror("Error", "Please run this program in the correct directory")
+    messagebox.showerror("Error", "Please run this program in the correct directory\nRun this program in an IDE if the problem persists")
     exit()
 if os.system("ruby -v") != 0:
     messagebox.showerror("Error", "Ruby is not installed. Please install Ruby to use this program.")
