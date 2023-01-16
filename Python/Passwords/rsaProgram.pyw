@@ -55,9 +55,6 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
         font_choice = "Arial"
-        if os.path.isfile("rsaProgram.pyw") == False:
-            QtWidgets.QMessageBox.critical(None, "Error", "Please run this program in the correct directory\nRun this program in an IDE if the problem persists")
-            sys.exit()
         if os.system("ruby -v") != 0:
             QtWidgets.QMessageBox.critical(None, "Error", "Ruby is not installed. Please install Ruby to use this program.")
             sys.exit()
