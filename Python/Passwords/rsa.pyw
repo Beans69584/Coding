@@ -55,7 +55,7 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
         font_choice = "Arial"
-        if os.path.isfile("tkinter-rsa.pyw") == False:
+        if os.path.isfile("rsa.pyw") == False:
             QtWidgets.QMessageBox.critical(None, "Error", "Please run this program in the correct directory\nRun this program in an IDE if the problem persists")
             sys.exit()
         if os.system("ruby -v") != 0:
